@@ -1,0 +1,5 @@
+pandas
+cloudpassage
+urllib3
+pytest
+six
