@@ -1,4 +1,4 @@
-# CLOUD_CSM_REPORTS
+# cloud_csm_reports
 Cloud CSM Reports script shows the overall pass and fail rates for each CSM policy rule for all csp accounts included in the report's scope.
 
 ## Goal:
@@ -11,8 +11,8 @@ The main purpose of this script is to generate a report to show the overall pass
 ## Installation:
 
 ```
-   git clone https://github.com/cloudpassage/CLOUD_CSM_REPORTS.git
-   cd CLOUD_CSM_REPORTS
+   git clone https://github.com/tmiller999/cloud_csm_reports.git
+   cd cloud_csm_reports
    pip install -r requirements.txt
 ```
 
@@ -39,7 +39,7 @@ To run the script follow the below steps.
 1.  Navigate to the app folder that contains module "runner.py", and run it
 
 ```
-    cd CLOUD_CSM_REPORTS/app
+    cd cloud_csm_reports/app
     python runner.py
 ```
 
@@ -47,9 +47,9 @@ To run the script follow the below steps.
 Clone the code and build the container:
 
 ```
-   git clone https://github.com/cloudpassage/CLOUD_CSM_REPORTSgit
-   cd CLOUD_CSM_REPORTS
-   docker build -t CLOUD_CSM_REPORTS .
+   git clone https://github.com/cloudpassage/cloud_csm_reports.git
+   cd cloud_csm_reports
+   docker build -t cloud_csm_reports .
 ```
 
 To run the container interactively:
@@ -59,5 +59,5 @@ To run the container interactively:
     -e HALO_API_KEY=$HALO_API_KEY \
     -e HALO_API_SECRET_KEY=$HALO_API_SECRET_KEY \
     -v $OUTPUT_DIRECTORY:/var/log \
-    CLOUD_CSM_REPORTS
+    cloud_csm_reports
 ```
