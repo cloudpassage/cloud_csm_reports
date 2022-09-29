@@ -49,7 +49,7 @@ Clone the code and build the container:
 ```
    git clone https://github.com/cloudpassage/cloud_csm_reports.git
    cd cloud_csm_reports
-   docker build -t cloud_csm_reports .
+   docker build -t halotools/cloud_csm_reports .
 ```
 
 To run the container interactively:
@@ -59,5 +59,5 @@ To run the container interactively:
     -e HALO_API_KEY=$HALO_API_KEY \
     -e HALO_API_SECRET_KEY=$HALO_API_SECRET_KEY \
     -v $OUTPUT_DIRECTORY:/var/log \
-    cloud_csm_reports
+    halotools/cloud_csm_reports
 ```
