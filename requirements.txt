@@ -1,5 +1,8 @@
-pandas
-cloudpassage
-urllib3
-pytest
-six
+pandas~=1.4.1
+cloudpassage~=1.6.4
+urllib3~=1.26.11
+pytest~=7.1.2
+six~=1.16.0
+plotly~=5.8.1
+plotly-express~=0.4.1
+kaleido~=0.2.1
